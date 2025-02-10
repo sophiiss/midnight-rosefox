@@ -1,0 +1,107 @@
+/**
+ * @name midnight (rosefox)
+ * @description A dark, rounded discord theme. Based on Biscuit theme (https://github.com/Biscuit-Colorscheme/biscuit).
+ * @author refact0r, anubis, colors by sophia :)
+ * @version 1.6.2
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @source https://github.com/refact0r/midnight-discord/blob/master/flavors/midnight-biscuit.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
+
+@import url('https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/midnight.css');
+
+/* customize things here */
+:root {
+  /* font, change to 'gg sans' for default discord font*/
+  --font: 'figtree';
+
+  /* top left corner text */
+  --corner-text: 'Discordo';
+
+  /* thickness of messages divider */
+  --divider-thickness: 3px;
+
+  /* color of status indicators and window controls */
+  --online-indicator: #3dbb72; /* change to #23a55a for default green */
+  --dnd-indicator: #f23f63; /* change to #f23f43 for default red */
+  --idle-indicator: #f1b641; /* change to #f0b232 for default yellow */
+  --streaming-indicator: #7e59a8; /* change to #593695 for default purple */
+
+  /* accent colors */
+  --accent-1: hsl(333, 46%, 69%); /* links */
+  --accent-2: hsl(333, 45%, 60%); /* general unread/mention elements */
+  --accent-3: hsl(333, 45%, 50%); /* accent buttons */
+  --accent-4: hsl(333, 45%, 39%); /* accent buttons when hovered */
+  --accent-5: hsl(333, 45%, 34%); /* accent buttons when clicked */
+  --mention: hsla(268, 20%, 39%, 0.1); /* mentions & mention messages */
+  --mention-hover: hsla(
+    268,
+    20%,
+    39%,
+    0.05
+  ); /* mentions & mention messages when hovered */
+
+  /* text colors */
+  --text-0: var(--text-2); /* text on colored elements */
+  --text-1: hsl(25, 21%, 83%); /* other normally white text */
+  --text-2: hsl(29, 100%, 94%); /* headings and important text */
+  --text-3: hsl(22, 19%, 84%); /* normal text */
+  --text-4: hsl(0, 6%, 68%); /* icon buttons and channels */
+  --text-5: hsl(0, 6%, 59%); /* muted channels/chats and timestamps */
+
+  /* background and dark colors */
+  --bg-1: hsl(0, 0%, 43%); /* dark buttons when clicked */
+  --bg-2: hsl(0, 0%, 19%); /* dark buttons */
+  --bg-3: hsl(0, 0%, 12%); /* spacing, secondary elements */
+  --bg-4: hsl(0, 0%, 8%); /* main background color */
+  --hover: hsla(0, 0%, 37%, 0.111); /* channels and buttons when hovered */
+  --active: hsla(
+    0,
+    0%,
+    35%,
+    0.259
+  ); /* channels and buttons when clicked or selected */
+  --message-hover: hsla(0, 0%, 0%, 0.184); /* messages when hovered */
+
+  /* amount of spacing and padding */
+  --spacing: 10px;
+
+  /* animations */
+  /* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
+  --list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
+  --unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
+  --moon-spin-transition: 0.4s ease; /* moon icon spin */
+  --icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
+
+  /* corner roundness (border-radius) */
+  --roundness-xl: 8px; /* roundness of big panel outer corners */
+  --roundness-l: 16px; /* popout panels */
+  --roundness-m: 10px; /* smaller panels, images, embeds */
+  --roundness-s: 12px; /* members, settings inputs */
+  --roundness-xs: 10px; /* channels, buttons */
+  --roundness-xxs: 8px; /* searchbar, small elements */
+
+  /* direct messages moon icon */
+  /* change to block to show, none to hide */
+  --discord-icon: none; /* discord icon */
+  --moon-icon: none; /* moon icon */
+  --moon-icon-url: none;
+  --moon-icon-size: auto;
+
+  /* filter uncolorable elements to fit theme */
+  /* (just set to none, they're too much work to configure) */
+  --login-bg-filter: none; /* login background artwork */
+  --green-to-accent-3-filter: none; /* add friend page explore icon */
+  --blurple-to-accent-3-filter: none; /* add friend page school icon */
+}
+.childWrapper__6e9f8:has(> svg:not(.favoriteIcon_dcc7a4)) {
+  background-image: url('https://raw.githubusercontent.com/NYRI4/LilyPichu/main/assets/icon.png');
+  background-color: #4a292f !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
