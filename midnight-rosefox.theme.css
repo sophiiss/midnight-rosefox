@@ -98,6 +98,8 @@
   --green-to-accent-3-filter: none; /* add friend page explore icon */
   --blurple-to-accent-3-filter: none; /* add friend page school icon */
 }
+
+/* replace the dm button with the lily icon */
 .childWrapper__6e9f8:has(> svg:not(.favoriteIcon_dcc7a4)) {
   background-image: url('https://raw.githubusercontent.com/NYRI4/LilyPichu/main/assets/icon.png');
   background-color: #4a292f !important;
