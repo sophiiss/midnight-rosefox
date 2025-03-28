@@ -15,10 +15,10 @@
   --accent-4: hsl(333, 45%, 39%) !important; /* accent buttons when hovered */
   --accent-5: hsl(333, 45%, 34%) !important; /* accent buttons when clicked */
   --accent-new: hsl(333, 45%, 60%) !important;
-  --mention: hsla(333, 43%, 54%, 0.1) !important; /* mentions & mention messages */
-  --mention-hover: hsla(333, 50%, 58%, 0.15) !important; /* mentions & mention messages when hovered */
-  --reply: hsla(333, 71%, 69%, 0.15) !important;
-  --reply-hover: hsla(333, 100%, 75%, 0.095) !important;
+  --mention: hsla(333, 48%, 62%, 0.085) !important; /* mentions & mention messages */
+  --mention-hover: hsla(333, 52%, 63%, 0.14) !important; /* mentions & mention messages when hovered */
+  --reply: hsla(333, 52%, 63%, 0.14) !important;
+  --reply-hover: hsla(333, 48%, 62%, 0.085) !important;
 
   /* text colors */
   --text-0: var(--text-2) !important; /* text on colored elements */
