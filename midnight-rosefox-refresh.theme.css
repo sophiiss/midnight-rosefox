@@ -1,30 +1,47 @@
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
-/* customize things here */
+/* customizing colors */
 :root {
-  /* color of status indicators and window controls */
-  --online: #3dbb72 !important;
-  --dnd: #f23f63 !important;
-  --idle: #f1b641 !important;
+  /* color variables */
+  --pinkish-1: hsl(333, 46%, 69%);
+  --pinkish-2: hsl(333, 45%, 60%);
+  --pinkish-3: hsl(333, 45%, 50%);
+  --pinkish-4: hsl(333, 45%, 39%);
+  --pinkish-5: hsl(333, 45%, 34%);
+
+  --translucent-pinkish-1: hsla(333, 45%, 60%, 0.1);
+  --translucent-pinkish-2: hsla(333, 55%, 60%, 0.050);
+
+  --translucent-1: hsla(0, 0%, 50%, 0.15);
+  --translucent-2: hsla(0, 0%, 30%, 0.15);
+
+  /* status indicators */
+  --online: #49c27b !important;
+  --dnd: #f14567 !important;
+  --idle: #f5bc4a !important;
   --streaming: #7e59a8 !important;
 
   /* accent colors */
-  --accent-1: hsl(333, 46%, 69%) !important; /* links */
-  --accent-2: hsl(333, 45%, 60%) !important; /* general unread/mention elements */
-  --accent-3: hsl(333, 45%, 50%) !important; /* accent buttons */
-  --accent-4: hsl(333, 45%, 39%) !important; /* accent buttons when hovered */
-  --accent-5: hsl(333, 45%, 34%) !important; /* accent buttons when clicked */
-  --accent-new: hsl(333, 45%, 60%) !important;
-  --mention: hsla(333, 48%, 62%, 0.085) !important; /* mentions & mention messages */
-  --mention-hover: hsla(333, 52%, 63%, 0.14) !important; /* mentions & mention messages when hovered */
-  --reply: hsla(333, 52%, 63%, 0.14) !important;
-  --reply-hover: hsla(333, 48%, 62%, 0.085) !important;
+  --accent-1: var(--pinkish-1) !important; /* links */
+  --accent-2: var(--pinkish-2) !important; /* general unread/mention elements */
+  --accent-3: var(--pinkish-3) !important; /* accent buttons */
+  --accent-4: var(--pinkish-4) !important; /* accent buttons when hovered */
+  --accent-5: var(--pinkish-5) !important; /* accent buttons when clicked */
+  --accent-new: var(--pinkish-2) !important; /* elements that are normally red like mute/deafen buttons */
+
+  /* mentions & mention messages */
+  --mention: var(--translucent-pinkish-1) !important;
+  --mention-hover: var(--translucent-pinkish-2) !important;
+
+  /* highlight of the message you're replying to */
+  --reply: var(--translucent-1) !important;
+  --reply-hover: var(--translucent-2) !important;
 
   /* text colors */
   --text-0: var(--text-2) !important; /* text on colored elements */
   --text-1: hsl(25, 21%, 83%) !important; /* other normally white text */
   --text-2: hsl(29, 100%, 94%) !important; /* headings and important text */
-  --text-3: hsl(22, 19%, 84%) !important; /* normal text */
+  --text-3: hsl(22, 19%, 84%) !important; /* messages */
   --text-4: hsl(0, 6%, 68%) !important; /* icon buttons and channels */
   --text-5: hsl(0, 6%, 59%) !important; /* muted channels/chats and timestamps */
 
