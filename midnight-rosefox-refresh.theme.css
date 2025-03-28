@@ -1,7 +1,30 @@
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
+/* adjusting gap size */
+body {
+  --gap: 6px !important;
+}
+
 /* customizing colors */
 :root {
+  /* base colors */
+  --red-1: oklch(76% 0.18 20);
+  --red-2: oklch(70% 0.18 20);
+  --red-3: oklch(64% 0.18 20);
+  --red-4: oklch(58% 0.18 20);
+  --red-5: oklch(52% 0.18 20);
+
+  --yellow-1: oklch(80% 0.12 80);
+  --yellow-2: oklch(74% 0.12 80);
+  --yellow-3: oklch(68% 0.12 80);
+  --yellow-4: oklch(62% 0.12 80);
+  --yellow-5: oklch(56% 0.12 80);
+
+  /* border colors */
+  --border-light: hsl(230, 0%, 40%, 0.1); /* light border color */
+  --border: hsl(230, 0%, 40%, 0.2); /* normal border color */
+  --button-border: hsl(0, 0%, 100%, 0.1); /* neutral border color of buttons */
+
   /* color variables */
   --pinkish-1: hsl(333, 46%, 69%);
   --pinkish-2: hsl(333, 45%, 60%);
@@ -10,7 +33,7 @@
   --pinkish-5: hsl(333, 45%, 34%);
 
   --translucent-pinkish-1: hsla(333, 45%, 60%, 0.1);
-  --translucent-pinkish-2: hsla(333, 55%, 60%, 0.050);
+  --translucent-pinkish-2: hsla(333, 55%, 60%, 0.05);
 
   --translucent-1: hsla(0, 0%, 50%, 0.15);
   --translucent-2: hsla(0, 0%, 30%, 0.15);
@@ -27,7 +50,9 @@
   --accent-3: var(--pinkish-3) !important; /* accent buttons */
   --accent-4: var(--pinkish-4) !important; /* accent buttons when hovered */
   --accent-5: var(--pinkish-5) !important; /* accent buttons when clicked */
-  --accent-new: var(--pinkish-2) !important; /* elements that are normally red like mute/deafen buttons */
+  --accent-new: var(
+    --pinkish-2
+  ) !important; /* elements that are normally red like mute/deafen buttons */
 
   /* mentions & mention messages */
   --mention: var(--translucent-pinkish-1) !important;
@@ -43,14 +68,15 @@
   --text-2: hsl(29, 100%, 94%) !important; /* headings and important text */
   --text-3: hsl(22, 19%, 84%) !important; /* messages */
   --text-4: hsl(0, 6%, 68%) !important; /* icon buttons and channels */
-  --text-5: hsl(0, 6%, 59%) !important; /* muted channels/chats and timestamps */
+  --text-5: hsl( 0, 6%, 59%
+  ) !important; /* muted channels/chats and timestamps */
 
   /* background and dark colors */
   --bg-1: hsl(0, 0%, 43%) !important; /* dark buttons when clicked */
   --bg-2: hsl(0, 0%, 19%) !important; /* dark buttons */
   --bg-3: hsl(0, 0%, 12%) !important; /* spacing, secondary elements */
   --bg-4: hsl(0, 0%, 8%) !important; /* main background color */
-  --hover: hsla(0, 0%, 37%, 0.111) !important; /* channels and buttons when hovered */
-  --active: hsla(0, 0%, 35%, 0.259) !important; /* channels and buttons when clicked or selected */
-  --message-hover: hsla(0, 0%, 0%, 0.184) !important; /* messages when hovered */
+  --hover: hsla( 0, 0%, 37%, 0.111) !important; /* channels and buttons when hovered */
+  --active: hsla( 0, 0%, 35%, 0.259) !important; /* channels and buttons when clicked or selected */
+  --message-hover: hsla( 0, 0%, 0%, 0.184) !important; /* messages when hovered */
 }
