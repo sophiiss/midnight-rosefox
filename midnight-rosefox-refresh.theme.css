@@ -26,10 +26,10 @@
   --divider-thickness: 3px;
 
   /* color of status indicators and window controls */
-  --online-indicator: #3dbb72; /* change to #23a55a for default green */
-  --dnd-indicator: #f23f63; /* change to #f23f43 for default red */
-  --idle-indicator: #f1b641; /* change to #f0b232 for default yellow */
-  --streaming-indicator: #7e59a8; /* change to #593695 for default purple */
+  --online: #3dbb72; /* change to #23a55a for default green */
+  --dnd: #f23f63; /* change to #f23f43 for default red */
+  --idle: #f1b641; /* change to #f0b232 for default yellow */
+  --streaming: #7e59a8; /* change to #593695 for default purple */
 
   /* accent colors */
   --accent-1: hsl(333, 46%, 69%); /* links */
