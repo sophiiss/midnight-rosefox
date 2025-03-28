@@ -20,25 +20,25 @@
   --divider-thickness: 3px;
 
   /* color of status indicators and window controls */
-  --online: #3dbb72; /* change to #23a55a for default green */
-  --dnd: #f23f63; /* change to #f23f43 for default red */
-  --idle: #f1b641; /* change to #f0b232 for default yellow */
-  --streaming: #7e59a8; /* change to #593695 for default purple */
+  --online: #3dbb72 !important; /* change to #23a55a for default green */
+  --dnd: #f23f63 !important; /* change to #f23f43 for default red */
+  --idle: #f1b641 !important; /* change to #f0b232 for default yellow */
+  --streaming: #7e59a8 !important; /* change to #593695 for default purple */
 
   /* accent colors */
-  --accent-1: hsl(333, 46%, 69%); /* links */
-  --accent-2: hsl(333, 45%, 60%); /* general unread/mention elements */
-  --accent-3: hsl(333, 45%, 50%); /* accent buttons */
-  --accent-4: hsl(333, 45%, 39%); /* accent buttons when hovered */
-  --accent-5: hsl(333, 45%, 34%); /* accent buttons when clicked */
-  --accent-new: hsl(333, 45%, 50%);
-  --mention: hsla(268, 20%, 39%, 0.1); /* mentions & mention messages */
+  --accent-1: hsl(333, 46%, 69%) !important; /* links */
+  --accent-2: hsl(333, 45%, 60%) !important; /* general unread/mention elements */
+  --accent-3: hsl(333, 45%, 50%) !important; /* accent buttons */
+  --accent-4: hsl(333, 45%, 39%) !important; /* accent buttons when hovered */
+  --accent-5: hsl(333, 45%, 34%) !important; /* accent buttons when clicked */
+  --accent-new: hsl(333, 45%, 50%) !important;
+  --mention: hsla(268, 20%, 39%, 0.1) !important; /* mentions & mention messages */
   --mention-hover: hsla(
     268,
     20%,
     39%,
     0.05
-  ); /* mentions & mention messages when hovered */
+  ) !important; /* mentions & mention messages when hovered */
 
   /* text colors */
   --text-0: var(--text-2); /* text on colored elements */
