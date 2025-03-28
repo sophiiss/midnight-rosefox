@@ -16,12 +16,6 @@
 
 /* customize things here */
 :root {
-  /* font, change to 'gg sans' for default discord font*/
-  --font: 'figtree';
-
-  /* top left corner text */
-  --corner-text: 'Discordo';
-
   /* thickness of messages divider */
   --divider-thickness: 3px;
 
@@ -37,6 +31,7 @@
   --accent-3: hsl(333, 45%, 50%); /* accent buttons */
   --accent-4: hsl(333, 45%, 39%); /* accent buttons when hovered */
   --accent-5: hsl(333, 45%, 34%); /* accent buttons when clicked */
+  --accent-new: hsl(333, 45%, 50%);
   --mention: hsla(268, 20%, 39%, 0.1); /* mentions & mention messages */
   --mention-hover: hsla(
     268,
