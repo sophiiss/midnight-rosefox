@@ -1,8 +1,22 @@
-@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+@import url(https://refact0r.github.io/midnight-discord/build/midnight.css);
 
 /* adjusting gap size */
 body {
   --gap: 6px !important;
+}
+
+/* remove gap between servers and channels */
+.visual-refresh {
+  .guilds_c48ade {
+    margin-right: -10px !important;
+    border-right: none !important;
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg) !important;
+  }
+
+  .sidebarListRounded_c48ade {
+    border-left: none !important;
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0 !important;
+  }
 }
 
 /* customizing colors */
