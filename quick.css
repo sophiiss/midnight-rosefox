@@ -12,9 +12,16 @@ ul[aria-label="Direct Messages"] > li:nth-child(4) {
 ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(5), ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(7) {
     display: none !important;
 }
+/* dividers surrounding recent apps */
+ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(6), ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(8) {
+    display: none !important;
+}
 
 /* recent apps */
 ul[aria-label="Direct Messages"] > div.container__675e5:nth-child(6) {
+    display: none !important;
+}
+ul[aria-label="Direct Messages"] > div.container__675e5:nth-child(7) {
     display: none !important;
 }
 
