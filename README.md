@@ -1,7 +1,7 @@
 ## How to use:
 
 Requirements:
-- Have Vencord or Vesktop installed [Download link](https://vencord.dev/download/)
+- Have Vencord or Vesktop installed -> [download link](https://vencord.dev/download/)
 
 ### Theme
 
