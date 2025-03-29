@@ -6,6 +6,7 @@ Requirements:
 ### Theme
 
 Instructions:
+
 Go to `Settings -> Themes -> Online Themes` and paste the following link:
 ```
 https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/midnight-rosefox-refresh.theme.css
