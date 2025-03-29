@@ -1,16 +1,25 @@
-/* shop tab */
-ul[aria-label="Direct Messages"] > li:nth-child(4) {
-    display: none !important;
-}
-
-/* nitro tab */
 ul[aria-label="Direct Messages"] > li:nth-child(3) {
     display: none !important;
 }
 
-/* recent apps */
-ul[aria-label="Direct Messages"] > div.container__675e5 {
+ul[aria-label="Direct Messages"] > li:nth-child(4) {
     display: none !important;
+}
+
+ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(6), ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(8) {
+    display: none !important;
+}
+
+ul[aria-label="Direct Messages"] > div.container__675e5:nth-child(7) {
+    display: none !important;
+}
+
+ul[aria-label="Direct Messages"] > div:nth-child(2) {
+    margin-bottom: 11px !important;
+}
+
+.searchBar__35e86 {
+    border-bottom: none !important;
 }
 
 /* apps */
@@ -19,7 +28,7 @@ div[class^="channelAppLauncher_"] {
 }
 
 /* gift button */
-div.buttons__74017 > div:nth-child(1) {
+div.buttons__74017 > button:nth-child(1) div:nth-child(1) {
     display: none !important;
 }
 
