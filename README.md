@@ -7,7 +7,9 @@ Requirements:
 
 Instructions:
 Go to `Settings -> Themes -> Online Themes` and paste the following link:
-`https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/midnight-rosefox-refresh.theme.css`
+```
+https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/midnight-rosefox-refresh.theme.css
+```
 
 ### QuickCSS
 Go to `Settings -> Themes -> Edit QuickCSS` and paste the following line:
