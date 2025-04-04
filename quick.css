@@ -78,3 +78,9 @@ div.toolbar__9293f > div[aria-label="Threads"] {
 div.toolbar__9293f > div[aria-label="Show Member List"], div.toolbar__9293f > div[aria-label="Hide Member List"] {
     display: none !important;
 }
+
+/* remove invite to listen along button in user context menu */
+div#user-context-invite-to-listen {
+    display: none !important;
+}
+
