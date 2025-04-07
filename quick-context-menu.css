@@ -1,0 +1,9 @@
+/* remove user context menu items */
+#user-context-note,
+#user-context-close-dm,
+#user-context-add-friend-nickname,
+#user-context-apps,
+#user-context-invite-to-server,
+#user-context-invite-to-listen {
+    display: none !important;
+}
