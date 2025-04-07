@@ -23,7 +23,7 @@ Go to `Settings -> Themes -> Edit QuickCSS` and paste the following line:
 ```
 
 #### Context menu hiding
-Do the same with this line instead:
+Do the same and add this line below the first one:
 ```css
 @import url('https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/quick-context-menu.css');
 ```
