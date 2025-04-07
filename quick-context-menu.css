@@ -4,6 +4,8 @@
 #user-context-add-friend-nickname,
 #user-context-apps,
 #user-context-invite-to-server,
-#user-context-invite-to-listen {
+#user-context-invite-to-listen,
+#user-context-invite-to-listen + div[class^="separator"] 
+{
     display: none !important;
 }
