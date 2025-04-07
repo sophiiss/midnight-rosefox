@@ -31,3 +31,9 @@ Do the same and add this line below the first one:
 ```
 
 All done!
+
+## Screenshots
+#### Context menu before/after
+![07_111445_Discord](https://github.com/user-attachments/assets/9ba0d0d9-d292-4464-b825-7144a6be52de)
+
+
