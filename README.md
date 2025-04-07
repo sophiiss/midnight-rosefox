@@ -1,3 +1,6 @@
+# 🌹🦊
+This is a collection of CSS files to customize the [Midnight Discord theme](https://github.com/refact0r/midnight-discord) to my taste + some QuickCSS tweaks for hiding UI elements I find to be clutter and a waste of space.
+
 ## How to use:
 
 Requirements:
@@ -13,8 +16,7 @@ https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/midnight-rosefo
 ```
 
 ### QuickCSS
-There are two QuickCSS files. The first one hides elements I find useless through the UI, and the second one which hides items from the user context menu (right-click on DM).
-Both work together.
+There are two QuickCSS files. The first one hides all kinds of elements throughout the UI, and the second one which hides items from the user context menu (right-click on DM).<br>They are meant to work together.
 
 #### Standard hiding
 Go to `Settings -> Themes -> Edit QuickCSS` and paste the following line:
