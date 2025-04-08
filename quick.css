@@ -52,17 +52,17 @@ a[href="https://support.discord.com"] {
 /* start dm buttons */
 
 /* video call button */
-div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class^="iconWrapper_"]:nth-of-type(2) {
+div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class*="iconWrapper_"]:nth-of-type(2) {
     display: none !important;
 }
 
 /* create group dm button */
-div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class^="iconWrapper_"]:nth-of-type(4) {
+div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class*="iconWrapper_"]:nth-of-type(4) {
     display: none !important;
 }
 
 /* show user profile button */
-div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class^="iconWrapper_"]:nth-of-type(5) {
+div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class*="iconWrapper_"]:nth-of-type(5) {
     display: none !important;
 }
 
