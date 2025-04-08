@@ -55,7 +55,7 @@ a[href="https://support.discord.com"] {
 }
 
 /* hide user profile button */
-div.toolbar__9293f > div[aria-label="Show User Profile"], div[aria-label="Show User Profile (Unavailable)"] {
+div[class^="iconWrapper_"]:has(+ span + div[class^="search_"]) {
     display: none !important;
 }
 
