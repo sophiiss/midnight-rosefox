@@ -32,12 +32,13 @@ There are some variables I added to make the QuickCSS more customizable.<br>You 
 
 ```css
 body {
-  --hide-context-menu-items: true;
-  --hide-nitro-shop-recentapps: true;
-  --hide-gift-button: true;
-  --hide-apps-button: true;
-  --hide-toolbar-items-server: true;
-  --hide-toolbar-items-dm: true;
+  --hide-context-menu-items: true; /* for right-click menu on any user */
+  --hide-nitro-shop-recentapps: true; /* tabs above dms */
+  --hide-gift-button: true; /* gift button on message box */
+  --hide-apps-button: true; /* apps button on message box */
+  --hide-toolbar-items-dm: true; /* buttons above chat, 'Start Video Call', 'Create Group DM', etc. */
+  --hide-toolbar-items-server: true; /* buttons above chat on server, like 'Threads' */
+  /* note: when hiding server toolbar, you can use Ctrl+U to open/close the members list */
 }
 ```
 
