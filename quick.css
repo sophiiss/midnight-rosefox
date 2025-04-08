@@ -8,18 +8,14 @@ div.scroller__99e7c ul.content__99f8c > li:nth-child(4) {
     display: none !important;
 }
 
-/* hide dividers surrounding recent apps (twice because discord css is beyond me) */
-div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(5), div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(7) {
-    display: none !important;
-}
+/* hide dividers surrounding recent apps */
+div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(5), div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(7),
 div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(6), div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(8) {
     display: none !important;
 }
 
-/* hide recent apps (twice again !!) */
-div.scroller__99e7c ul.content__99f8c > div.container__675e5:nth-child(6) {
-    display: none !important;
-}
+/* hide recent apps */
+div.scroller__99e7c ul.content__99f8c > div.container__675e5:nth-child(6), 
 div.scroller__99e7c ul.content__99f8c > div.container__675e5:nth-child(7) {
     display: none !important;
 }
