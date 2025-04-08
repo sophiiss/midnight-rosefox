@@ -1,5 +1,10 @@
-/* ------- user context menu items ------- */
+/* useless help button */
+a[href="https://support.discord.com"]
+{
+  display: none !important;
+}
 
+/* ------- user context menu items ------- */
 @property --hide-context-menu-items {
   syntax: 'true | false';
   inherits: false;
@@ -20,17 +25,25 @@
 
 /* ------- end context menu items ------- */
 
-/* useless help button */
-a[href="https://support.discord.com"],
-/* nitro tab */
-div.scroller__99e7c ul.content__99f8c>li:nth-child(3),
-/* shop tab */
-div.scroller__99e7c ul.content__99f8c>li:nth-child(4),
-/* recent apps */
-div.scroller__99e7c ul.content__99f8c>div.container__675e5:nth-child(6),
-div.scroller__99e7c ul.content__99f8c>div.container__675e5:nth-child(7) {
-  display: none !important;
+/* ------- start tabs above dms ------- */
+@property --hide-nitro-shop-recentapps {
+  syntax: 'true | false';
+  inherits: false;
+  initial-value: true;
 }
+
+@container body style(--hide-nitro-shop-recentapps: true) {
+  /* nitro tab */
+  div.scroller__99e7c ul.content__99f8c>li:nth-child(3),
+    /* shop tab */
+    div.scroller__99e7c ul.content__99f8c>li:nth-child(4),
+    /* recent apps */
+    div.scroller__99e7c ul.content__99f8c>div.container__675e5:nth-child(6),
+    div.scroller__99e7c ul.content__99f8c>div.container__675e5:nth-child(7) {
+    display: none !important;
+  }
+}
+/* ------- end tabs above dms ------- */
 
 /* dividers surrounding recent apps */
 div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(5),
@@ -59,7 +72,6 @@ div.buttons__74017>div.button__201d5 {
 }
 
 /* -------- start dm buttons -------- */
-
 /* video call button */
 div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2),
 /* create group dm button */
@@ -79,7 +91,6 @@ div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(d
 /* -------- end dm buttons -------- */
 
 /* -------- start server buttons -------- */
-
 /* threads button */
 div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1),
 /* notification settings button */
