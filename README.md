@@ -16,18 +16,11 @@ https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/midnight-rosefo
 ```
 
 ### QuickCSS
-There are two QuickCSS files.<br>The first one hides all kinds of elements throughout the UI, and the second one which hides items from the user context menu (right-click on profile).<br>They are meant to work together.
+Instructions:
 
-#### Standard hiding
 Go to `Settings -> Themes -> Edit QuickCSS` and paste the following line:
 ```css
 @import url('https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/quick.css');
-```
-
-#### Context menu hiding
-Do the same and add this line below the first one:
-```css
-@import url('https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/quick-context-menu.css');
 ```
 
 All done!
