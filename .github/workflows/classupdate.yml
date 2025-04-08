@@ -36,9 +36,9 @@ jobs:
         run: |
           git clone https://github.com/Saltssaumure/ClassUpdate
           cd ClassUpdate
-          python3 replace.py ../midnight.theme.css
-          python3 replace.py ../quick.css
-          python3 replace.py ../quick-context-menu.css
+          y | python3 replace.py ../midnight.theme.css
+          y | python3 replace.py ../quick.css
+          y | python3 replace.py ../quick-context-menu.css
           cd ..
           rm -rf ClassUpdate
 
