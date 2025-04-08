@@ -1,0 +1,62 @@
+name: Auto Update Classnames
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # every 12 hours
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout your repo
+        uses: actions/checkout@v4.2.2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y jq
+
+      - name: Get latest classchanges commit SHA
+        id: fetch_sha
+        run: |
+          curl -s https://api.github.com/repos/itmesarah/classchanges/commits/main \
+            | jq -r '.sha' > classchanges.sha
+          echo "sha=$(cat classchanges.sha)" >> $GITHUB_OUTPUT
+
+      - name: Get last run SHA from cache (if any)
+        id: restore_cache
+        uses: actions/cache@v4.2.3
+        with:
+          path: classchanges.sha
+          key: classchanges-${{ steps.fetch_sha.outputs.sha }}
+
+      - name: Run ClassUpdate on all themes
+        if: steps.restore_cache.outputs.cache-hit != 'true'
+        run: |
+          git clone https://github.com/Saltssaumure/ClassUpdate
+          cd ClassUpdate
+          python3 replace.py ../midnight.theme.css
+          python3 replace.py ../quick.css
+          python3 replace.py ../quick-context-menu.css
+          cd ..
+          rm -rf ClassUpdate
+
+      - name: Check if files changed
+        if: steps.restore_cache.outputs.cache-hit != 'true'
+        id: git_diff
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push updates
+        if: steps.git_diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add midnight.theme.css quick.css quick-context-menu.css
+          git commit -m "Auto-update classnames from classchanges ${{ steps.fetch_sha.outputs.sha }}"
+          git push
