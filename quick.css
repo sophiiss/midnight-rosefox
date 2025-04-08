@@ -1,31 +1,31 @@
 /* hide nitro tab */
-ul[aria-label="Direct Messages"] > li:nth-child(3) {
+div.scroller__99e7c ul.content__99f8c > li:nth-child(3) {
     display: none !important;
 }
 
 /* hide shop tab */
-ul[aria-label="Direct Messages"] > li:nth-child(4) {
+div.scroller__99e7c ul.content__99f8c > li:nth-child(4) {
     display: none !important;
 }
 
 /* hide dividers surrounding recent apps (twice because discord css is beyond me) */
-ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(5), ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(7) {
+div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(5), div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(7) {
     display: none !important;
 }
-ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(6), ul[aria-label="Direct Messages"] > div.sectionDivider__35e86:nth-child(8) {
+div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(6), div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(8) {
     display: none !important;
 }
 
 /* hide recent apps (twice again !!) */
-ul[aria-label="Direct Messages"] > div.container__675e5:nth-child(6) {
+div.scroller__99e7c ul.content__99f8c > div.container__675e5:nth-child(6) {
     display: none !important;
 }
-ul[aria-label="Direct Messages"] > div.container__675e5:nth-child(7) {
+div.scroller__99e7c ul.content__99f8c > div.container__675e5:nth-child(7) {
     display: none !important;
 }
 
 /* make friends tab but further from dms */
-ul[aria-label="Direct Messages"] > div:nth-child(2) {
+div.scroller__99e7c ul.content__99f8c > div:nth-child(2) {
     margin-bottom: 11px !important;
 }
 
@@ -34,13 +34,14 @@ ul[aria-label="Direct Messages"] > div:nth-child(2) {
     border-bottom: none !important;
 }
 
-/* hide apps */
-div[class^="channelAppLauncher_"] {
+/* hide app launcher */
+div.channelAppLauncher_e6e74f {
     display: none !important;
 }
 
 /* hide gift button */
-div.buttons__74017 > button:nth-child(1) div:nth-child(1) {
+div.buttons__74017 > button.button__201d5,
+div.buttons__74017 > div.button__201d5 {
     display: none !important;
 }
 
@@ -49,52 +50,51 @@ a[href="https://support.discord.com"] {
     display: none !important;
 }
 
-/* start dm buttons */
+/* -------- start dm buttons -------- */
 
 /* video call button */
-div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class*="toolbar_"]:has(div[class*="iconWrapper_"]:nth-of-type(5)) div[class*="iconWrapper_"]:nth-of-type(2) {
+div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2) {
     display: none !important;
 }
 
 /* create group dm button */
-div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class*="toolbar_"]:has(div[class*="iconWrapper_"]:nth-of-type(5)) div[class*="iconWrapper_"]:nth-of-type(4) {
+div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4) {
     display: none !important;
 }
 
 /* show user profile button */
-div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class*="toolbar_"]:has(div[class*="iconWrapper_"]:nth-of-type(5)) div[class*="iconWrapper_"]:nth-of-type(5) {
+div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(5) {
     display: none !important;
 }
 
 /* create group dm button during voice call */
-div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class*="toolbar_"]:has(div[class*="iconWrapper_"]:nth-of-type(3)):not(:has(div[class*="iconWrapper_"]:nth-of-type(5))) div[class*="iconWrapper_"]:nth-of-type(3) {
+div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3) {
     display: none !important;
 }
 
 /* show user profile button during voice call */
-div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class*="toolbar_"]:has(div[class*="iconWrapper_"]:nth-of-type(3)):not(:has(div[class*="iconWrapper_"]:nth-of-type(5))) div[class*="iconWrapper_"]:nth-of-type(4) {
+div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(4) {
     display: none !important;
 }
 
-/* end dm buttons */
+/* -------- end dm buttons -------- */
 
 
-/* start server button */
+/* -------- start server buttons -------- */
 
 /* threads button */
-div[class^="container_"]:has(nav[class^="container_"]) div[class^="toolbar_"] div[class*="iconWrapper_"]:nth-of-type(1) {
+div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1) {
     display: none !important;
 }
 
 /* notification settings button */
-div[class^="container_"]:has(nav[class^="container_"]) div[class^="toolbar_"] div[class*="iconWrapper_"]:nth-of-type(2) {
+div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(2) {
     display: none !important;
 }
 
 /* show members list button */
-div[class^="container_"]:has(nav[class^="container_"]) div[class^="toolbar_"] div[class*="iconWrapper_"]:nth-of-type(4) {
+div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(4) {
     display: none !important;
 }
 
-/* end server button */
-
+/* -------- end server buttons -------- */
