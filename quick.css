@@ -25,7 +25,7 @@ a[href="https://support.discord.com"]
 
 /* ------- end context menu items ------- */
 
-/* ------- start tabs above dms ------- */
+/* ------- start stuff above dms ------- */
 @property --hide-nitro-shop-recentapps {
   syntax: 'true | false';
   inherits: false;
@@ -42,26 +42,34 @@ a[href="https://support.discord.com"]
     div.scroller__99e7c ul.content__99f8c>div.container__675e5:nth-child(7) {
     display: none !important;
   }
-}
-/* ------- end tabs above dms ------- */
 
-/* dividers surrounding recent apps */
-div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(5),
-div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(7),
-div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(6),
-div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(8) {
-  display: none !important;
-}
+  /* dividers surrounding recent apps */
+  div.scroller__99e7c
+    ul.content__99f8c
+    > div.sectionDivider__35e86:nth-child(5),
+  div.scroller__99e7c
+    ul.content__99f8c
+    > div.sectionDivider__35e86:nth-child(7),
+  div.scroller__99e7c
+    ul.content__99f8c
+    > div.sectionDivider__35e86:nth-child(6),
+  div.scroller__99e7c
+    ul.content__99f8c
+    > div.sectionDivider__35e86:nth-child(8) {
+    display: none !important;
+  }
 
-/* make friends tab but further from dms */
-div.scroller__99e7c ul.content__99f8c > div:nth-child(2) {
-  margin-bottom: 11px !important;
-}
+  /* make friends tab but further from dms */
+  div.scroller__99e7c ul.content__99f8c > div:nth-child(2) {
+    margin-bottom: 11px !important;
+  }
 
-/* remove useless border below search button in dm list */
-.searchBar__35e86 {
-  border-bottom: none !important;
+  /* remove useless border below search button in dm list */
+  .searchBar__35e86 {
+    border-bottom: none !important;
+  }
 }
+/* ------- end stuff above dms ------- */
 
 /* app launcher */
 div.channelAppLauncher_e6e74f,
