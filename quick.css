@@ -1,6 +1,5 @@
 /* useless help button */
-a[href="https://support.discord.com"]
-{
+a[href="https://support.discord.com"] {
   display: none !important;
 }
 
@@ -22,7 +21,6 @@ a[href="https://support.discord.com"]
     display: none !important;
   }
 }
-
 /* ------- end context menu items ------- */
 
 /* ------- start stuff above dms ------- */
@@ -69,7 +67,6 @@ a[href="https://support.discord.com"]
     border-bottom: none !important;
   }
 }
-
 /* ------- end stuff above dms ------- */
 
 /* ------- start text box buttons ------- */
@@ -99,36 +96,49 @@ a[href="https://support.discord.com"]
     display: none !important;
   }
 }
-
 /* ------- end text box buttons ------- */
 
 /* -------- start dm buttons -------- */
-/* video call button */
-div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2),
+@property --hide-toolbar-items-dm {
+  syntax: 'true | false';
+  inherits: false;
+  initial-value: true;
+}
+
+@container body style(--hide-toolbar-items-dm: true) {
+  /* video call button */
+  div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2),
     /* create group dm button */
     div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4),
     /* show user profile button */
     div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(5) {
-  display: none !important;
-}
+    display: none !important;
+  }
 
-/* create group dm button during voice call */
-div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3),
+  /* create group dm button during voice call */
+  div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3),
     /* show user profile button during voice call */
     div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(4) {
-  display: none !important;
+    display: none !important;
+  }
 }
-
 /* -------- end dm buttons -------- */
 
 /* -------- start server buttons -------- */
-/* threads button */
-div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1),
+@property --hide-toolbar-items-server {
+  syntax: 'true | false';
+  inherits: false;
+  initial-value: true;
+}
+
+@container body style(--hide-toolbar-items-server: true) {
+  /* threads button */
+  div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1),
     /* notification settings button */
     div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(2),
     /* show members list button */
     div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(4) {
-  display: none !important;
+    display: none !important;
+  }
 }
-
 /* -------- end server buttons -------- */
