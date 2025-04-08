@@ -38,15 +38,11 @@ jobs:
           cd ClassUpdate
           ls -la
           echo "[DEFAULT]" > config.ini
-          echo "ThemeDirectory: themes" >> config.ini
+          echo "ThemeDirectory: ./" >> config.ini
           echo "FileExtension: css" >> config.ini
           echo "UseLocalDiff: no" >> config.ini
           echo "DiffLocation: https://raw.githubusercontent.com/SyndiShanX/Update-Classes/main/Changes.txt" >> config.ini
-          y | python3 replace.py ../midnight.theme.css
-          y | python3 replace.py ../quick.css
-          y | python3 replace.py ../quick-context-menu.css
-          cd ..
-          rm -rf ClassUpdate
+          python3 replace.py
 
       - name: Check if files changed
         if: steps.restore_cache.outputs.cache-hit != 'true'
@@ -63,6 +59,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add midnight.theme.css quick.css quick-context-menu.css
+          git add midnight-rosefox-refresh.theme.css quick.css quick-context-menu.css
           git commit -m "Auto-update classnames from classchanges ${{ steps.fetch_sha.outputs.sha }}"
           git push
