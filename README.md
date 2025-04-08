@@ -16,6 +16,7 @@ https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/midnight-rosefo
 ```
 
 ### QuickCSS
+
 Instructions:
 
 Go to `Settings -> Themes -> Edit QuickCSS` and paste the following line:
@@ -23,6 +24,14 @@ Go to `Settings -> Themes -> Edit QuickCSS` and paste the following line:
 @import url('https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/quick.css');
 ```
 
+There are some variables I added to make the QuickCSS more customizable.<br>You can insert them in your QuickCSS below the `@import` line, then replace true with false wherever you see fit.
+```css
+body {
+  --hide-context-menu-items: true;
+  --hide-nitro-shop-recentapps: true;
+}
+```
+<br>
 All done!
 
 ## Screenshots
