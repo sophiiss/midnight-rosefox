@@ -34,7 +34,7 @@ jobs:
       - name: Run ClassUpdate on all themes
         if: steps.restore_cache.outputs.cache-hit != 'true'
         run: |
-          git clone https://github.com/Saltssaumure/ClassUpdate
+          git clone https://github.com/sophiiss/ClassUpdate
           cd ClassUpdate
           ls -la
           echo "[DEFAULT]" > config.ini
