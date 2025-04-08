@@ -29,7 +29,7 @@ ul[aria-label="Direct Messages"] > div:nth-child(2) {
     margin-bottom: 11px !important;
 }
 
-/* remove useless border below search button */
+/* remove useless border below search button in dm list */
 .searchBar__35e86 {
     border-bottom: none !important;
 }
@@ -44,38 +44,47 @@ div.buttons__74017 > button:nth-child(1) div:nth-child(1) {
     display: none !important;
 }
 
-/* hide create group dm button */
-div[aria-label="Add Friends to DM"] {
-    display: none !important;
-}
-
-/* remove useless fucking help button */
+/* useless help button */
 a[href="https://support.discord.com"] {
     display: none !important;
 }
 
-/* hide user profile button */
-div[class^="iconWrapper_"]:has(+ span + div[class^="search_"]) {
+/* start dm buttons */
+
+/* video call button */
+div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class^="iconWrapper_"]:nth-of-type(2) {
     display: none !important;
 }
 
-/* hide video call button */
-div.toolbar__9293f > div[aria-label="Start Video Call"] {
+/* create group dm button */
+div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class^="iconWrapper_"]:nth-of-type(4) {
     display: none !important;
 }
 
-/* hide notification settings button */
-div.toolbar__9293f > div[aria-label="Notification Settings"] {
+/* show user profile button */
+div[class^="container_"]:has(nav[class^="privateChannels_"]) div[class^="iconWrapper_"]:nth-of-type(5) {
     display: none !important;
 }
 
-/* hide threads button */
-div.toolbar__9293f > div[aria-label="Threads"] {
+/* end dm buttons */
+
+
+/* start server button */
+
+/* threads button */
+div[class^="container_"]:has(nav[class^="container_"]) div[class^="toolbar_"] div[class*="iconWrapper_"]:nth-of-type(1) {
     display: none !important;
 }
 
-/* hide member list button */
-div.toolbar__9293f > div[aria-label="Show Member List"], div.toolbar__9293f > div[aria-label="Hide Member List"] {
+/* notification settings button */
+div[class^="container_"]:has(nav[class^="container_"]) div[class^="toolbar_"] div[class*="iconWrapper_"]:nth-of-type(2) {
     display: none !important;
 }
+
+/* show members list button */
+div[class^="container_"]:has(nav[class^="container_"]) div[class^="toolbar_"] div[class*="iconWrapper_"]:nth-of-type(4) {
+    display: none !important;
+}
+
+/* end server button */
 
