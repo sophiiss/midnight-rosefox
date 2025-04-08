@@ -1,3 +1,25 @@
+/* ------- user context menu items ------- */
+
+@property --hide-context-menu-items {
+  syntax: 'true | false';
+  inherits: false;
+  initial-value: true;
+}
+
+@container body style(--hide-context-menu-items: true) {
+  #user-context-note,
+  #user-context-close-dm,
+  #user-context-add-friend-nickname,
+  #user-context-apps,
+  #user-context-invite-to-server,
+  #user-context-invite-to-listen,
+  #user-context-invite-to-listen + div.separator_c1e9c4 {
+    display: none !important;
+  }
+}
+
+/* ------- end context menu items ------- */
+
 /* useless help button */
 a[href="https://support.discord.com"],
 /* nitro tab */
