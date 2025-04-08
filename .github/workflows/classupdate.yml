@@ -54,11 +54,34 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit and push updates
+      - name: Commit, push, and create release
         if: steps.git_diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add midnight-rosefox-refresh.theme.css quick.css quick-context-menu.css
           git commit -m "Auto-update classnames from classchanges ${{ steps.fetch_sha.outputs.sha }}"
           git push
+
+          # Get latest tag and bump
+          LATEST_TAG=$(git tag --sort=-v:refname | grep '^v1\.' | head -n1)
+
+          if [ -z "$LATEST_TAG" ]; then
+            NEW_TAG="v1.0.0"
+          else
+            IFS='.' read -r major minor patch <<<"${LATEST_TAG#v}"
+            NEW_TAG="v$major.$minor.$((patch + 1))"
+          fi
+
+          # Create new tag and release
+          git tag "$NEW_TAG"
+          git push origin "$NEW_TAG"
+
+          gh release create "$NEW_TAG" \
+            --title "$NEW_TAG" \
+            --notes "Updated classnames from [classchanges](https://github.com/itmesarah/classchanges) commit `${{ steps.fetch_sha.outputs.sha }}`" \
+            --attach midnight-rosefox-refresh.theme.css \
+            --attach quick.css \
+            --attach quick-context-menu.css
