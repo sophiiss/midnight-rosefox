@@ -1,96 +1,70 @@
-/* hide nitro tab */
-div.scroller__99e7c ul.content__99f8c > li:nth-child(3) {
-    display: none !important;
+/* useless help button */
+a[href="https://support.discord.com"],
+/* nitro tab */
+div.scroller__99e7c ul.content__99f8c>li:nth-child(3),
+/* shop tab */
+div.scroller__99e7c ul.content__99f8c>li:nth-child(4),
+/* recent apps */
+div.scroller__99e7c ul.content__99f8c>div.container__675e5:nth-child(6),
+div.scroller__99e7c ul.content__99f8c>div.container__675e5:nth-child(7) {
+  display: none !important;
 }
 
-/* hide shop tab */
-div.scroller__99e7c ul.content__99f8c > li:nth-child(4) {
-    display: none !important;
-}
-
-/* hide dividers surrounding recent apps */
-div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(5), div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(7),
-div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(6), div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(8) {
-    display: none !important;
-}
-
-/* hide recent apps */
-div.scroller__99e7c ul.content__99f8c > div.container__675e5:nth-child(6), 
-div.scroller__99e7c ul.content__99f8c > div.container__675e5:nth-child(7) {
-    display: none !important;
+/* dividers surrounding recent apps */
+div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(5),
+div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(7),
+div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(6),
+div.scroller__99e7c ul.content__99f8c > div.sectionDivider__35e86:nth-child(8) {
+  display: none !important;
 }
 
 /* make friends tab but further from dms */
 div.scroller__99e7c ul.content__99f8c > div:nth-child(2) {
-    margin-bottom: 11px !important;
+  margin-bottom: 11px !important;
 }
 
 /* remove useless border below search button in dm list */
 .searchBar__35e86 {
-    border-bottom: none !important;
+  border-bottom: none !important;
 }
 
-/* hide app launcher */
-div.channelAppLauncher_e6e74f {
-    display: none !important;
-}
-
-/* hide gift button */
-div.buttons__74017 > button.button__201d5,
-div.buttons__74017 > div.button__201d5 {
-    display: none !important;
-}
-
-/* useless help button */
-a[href="https://support.discord.com"] {
-    display: none !important;
+/* app launcher */
+div.channelAppLauncher_e6e74f,
+/* gift button */
+div.buttons__74017>button.button__201d5,
+div.buttons__74017>div.button__201d5 {
+  display: none !important;
 }
 
 /* -------- start dm buttons -------- */
 
 /* video call button */
-div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2) {
-    display: none !important;
-}
-
+div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2),
 /* create group dm button */
-div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4) {
-    display: none !important;
-}
-
+div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4),
 /* show user profile button */
 div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(5) {
-    display: none !important;
+  display: none !important;
 }
 
 /* create group dm button during voice call */
-div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3) {
-    display: none !important;
-}
-
+div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3),
 /* show user profile button during voice call */
 div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(4) {
-    display: none !important;
+  display: none !important;
 }
 
 /* -------- end dm buttons -------- */
 
-
 /* -------- start server buttons -------- */
 
 /* threads button */
-div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1) {
-    display: none !important;
-}
-
+div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1),
 /* notification settings button */
-div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(2) {
-    display: none !important;
-}
-
+div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(2),
 /* show members list button */
 div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(4) {
-    display: none !important;
+  display: none !important;
 }
 
 /* -------- end server buttons -------- */
