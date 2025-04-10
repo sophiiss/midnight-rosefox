@@ -2,7 +2,7 @@
 
 /* adjusting gap size */
 body {
-  --gap: 6px !important;
+  --gap: 4px !important;
 }
 
 /* remove gap between servers and channels */
