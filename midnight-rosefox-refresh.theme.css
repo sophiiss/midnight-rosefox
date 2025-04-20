@@ -3,6 +3,11 @@
 /* adjusting gap size */
 body {
   --gap: 4px !important;
+  
+  --custom-window-controls: off;
+  --custom-dms-icon: off;
+
+  --small-user-panel: off;
 }
 
 /* remove gap between servers and channels */
