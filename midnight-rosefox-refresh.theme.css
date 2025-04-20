@@ -13,7 +13,7 @@ body {
 /* remove gap between servers and channels */
 .visual-refresh {
   .guilds_c48ade {
-    margin-right: -10px !important;
+    margin-right: -4px !important;
     border-right: none !important;
     border-radius: var(--radius-lg) 0 0 var(--radius-lg) !important;
   }
