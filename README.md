@@ -15,7 +15,7 @@ Instructions:
 Go to `Settings -> Themes -> Online Themes` and paste the following link:
 
 ```
-https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/midnight-rosefox-refresh.theme.css
+https://sophiiss.github.io/midnight-rosefox/midnight-rosefox-refresh.theme.css
 ```
 
 ### QuickCSS
@@ -25,7 +25,7 @@ Instructions:
 Go to `Settings -> Themes -> Edit QuickCSS` and paste the following line:
 
 ```css
-@import url('https://raw.githubusercontent.com/sophiiss/midnight-rosefox/main/quick.css');
+@import url('https://sophiiss.github.io/midnight-rosefox/quick.css');
 ```
 
 There are some variables I added to make the QuickCSS more customizable.<br>You can insert them in your QuickCSS below the `@import` line, then replace `true` with `false` wherever you see fit.
