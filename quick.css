@@ -78,9 +78,9 @@ a[href="https://support.discord.com"] {
 
 /* gift button */
 @container body style(--hide-gift-button: true) {
-  div.buttons__74017 > div.container_c0c49a {
+  div.buttons__74017 > button.button__201d5 {
     display: none !important;
-  }
+ }
 }
 
 @property --hide-apps-button {
