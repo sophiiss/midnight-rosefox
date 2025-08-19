@@ -13,7 +13,6 @@ a[href="https://support.discord.com"] {
 @container body style(--hide-context-menu-items: true) {
   #user-context-note,
   #user-context-close-dm,
-  #dm-kebab-context-close-dm,
   #user-context-add-friend-nickname,
   #user-context-apps,
   #user-context-invite-to-server,
