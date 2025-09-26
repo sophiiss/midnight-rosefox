@@ -8,6 +8,9 @@ body {
   --custom-dms-icon: off;
 
   --small-user-panel: off;
+
+  
+  --chatbar-height: 56px !important;
 }
 
 /* remove gap between servers and channels */
