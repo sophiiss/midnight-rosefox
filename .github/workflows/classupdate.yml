@@ -1,87 +1,27 @@
-name: Auto Update Classnames
+name: Update Classes
 
 on:
   schedule:
-    - cron: '0 */12 * * *'  # every 12 hours
+    - cron: "0 */24 * * *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [update_class]
 
 jobs:
-  update:
+  classUpdate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout your repo
-        uses: actions/checkout@v4.2.2
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get install -y jq
-
-      - name: Get latest classchanges commit SHA
-        id: fetch_sha
-        run: |
-          curl -s https://api.github.com/repos/itmesarah/classchanges/commits/main \
-            | jq -r '.sha' > classchanges.sha
-          echo "sha=$(cat classchanges.sha)" >> $GITHUB_OUTPUT
-
-      - name: Get last run SHA from cache (if any)
-        id: restore_cache
-        uses: actions/cache@v4.2.3
+      - uses: actions/checkout@v4
+      - id: update
+        uses: metro420yt/class-update@v1-rc3
         with:
-          path: classchanges.sha
-          key: classchanges-${{ steps.fetch_sha.outputs.sha }}
-
-      - name: Run ClassUpdate on all themes
-        if: steps.restore_cache.outputs.cache-hit != 'true'
-        run: |
-          git clone https://github.com/sophiiss/ClassUpdate
-          cd ClassUpdate
-          ls -la
-          echo "[DEFAULT]" > config.ini
-          echo "ThemeDirectory: ./" >> config.ini
-          echo "FileExtension: css" >> config.ini
-          echo "UseLocalDiff: no" >> config.ini
-          echo "DiffLocation: https://raw.githubusercontent.com/SyndiShanX/Update-Classes/main/Changes.txt" >> config.ini
-          python3 replace.py
-
-      - name: Check if files changed
-        if: steps.restore_cache.outputs.cache-hit != 'true'
-        id: git_diff
-        run: |
-          if git diff --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Commit, push, and create release
-        if: steps.git_diff.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@users.noreply.github.com"
-          git add midnight-rosefox-refresh.theme.css quick.css quick-context-menu.css
-          git commit -m "Auto-update classnames from classchanges ${{ steps.fetch_sha.outputs.sha }}"
-          git push
-
-          # Get latest tag and bump
-          LATEST_TAG=$(git tag --sort=-v:refname | grep '^v1\.' | head -n1)
-
-          if [ -z "$LATEST_TAG" ]; then
-            NEW_TAG="v1.0.0"
-          else
-            IFS='.' read -r major minor patch <<<"${LATEST_TAG#v}"
-            NEW_TAG="v$major.$minor.$((patch + 1))"
-          fi
-
-          # Create new tag and release
-          git tag "$NEW_TAG"
-          git push origin "$NEW_TAG"
-
-          gh release create "$NEW_TAG" \
-            --title "$NEW_TAG" \
-            --notes "Updated classnames from [classchanges](https://github.com/itmesarah/classchanges) commit `${{ steps.fetch_sha.outputs.sha }}`" \
-            --attach midnight-rosefox-refresh.theme.css \
-            --attach quick.css \
-            --attach quick-context-menu.css
+          folder: src
+          ext: css
+          diff: "https://raw.githubusercontent.com/SyndiShanX/Update-Classes/main/Changes.txt"
+      - uses: EndBug/add-and-commit@v9
+        if: ${{steps.update.outputs.totalChanges > 0}}
+        with:
+          default_author: github_actions
+          message: "chore: update classes >_<"
+          fetch: true
