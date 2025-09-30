@@ -16,12 +16,12 @@ jobs:
       - id: update
         uses: metro420yt/class-update@v1-rc3
         with:
-          folder: src
+          folder: /
           ext: css
           diff: "https://raw.githubusercontent.com/SyndiShanX/Update-Classes/main/Changes.txt"
       - uses: EndBug/add-and-commit@v9
         if: ${{steps.update.outputs.totalChanges > 0}}
         with:
           default_author: github_actions
-          message: "chore: update classes >_<"
+          message: "chore: update classes ^-^"
           fetch: true
