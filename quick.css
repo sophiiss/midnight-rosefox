@@ -81,6 +81,10 @@ a[href="https://support.discord.com"] {
   div.buttons__74017 > div.button__74017 {
     display: none !important;
  }
+
+  div.buttons__74017 > div.container_c0c49a {
+    display: none !important;
+  }
 }
 
 @property --hide-apps-button {
