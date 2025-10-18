@@ -35,10 +35,10 @@ a[href="https://support.discord.com"] {
   div.scroller__99e7c ul.content_d125d2>li:nth-child(3),
     /* shop tab */
     div.scroller__99e7c ul.content_d125d2>li:nth-child(4),
-    /* recent apps */
-    div.scroller__99e7c ul.content_d125d2>div.container__675e5:nth-child(6),
-    div.scroller__99e7c ul.content_d125d2>div.container__675e5:nth-child(7) {
+    /* quests tab */
+    div.scroller__99e7c ul.content_d125d2>li:nth-child(5) {
     display: none !important;
+    }
   }
 
   /* dividers surrounding recent apps */
