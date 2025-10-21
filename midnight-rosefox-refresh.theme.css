@@ -13,6 +13,11 @@ body {
   --chatbar-height: 56px !important;
 }
 
+/* prevent the dm context menu from taking half the screen with big usernames */
+.flexible_c1e9c4 {
+  max-width: 188px !important;
+}
+
 /* remove gap between servers and channels */
 .visual-refresh {
   .guilds_c48ade {
