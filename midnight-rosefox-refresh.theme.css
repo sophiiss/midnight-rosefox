@@ -26,12 +26,10 @@ body {
   margin-left: 0px !important;
   border-bottom-left-radius: 0px !important;
   border-top: none !important;
-  border-left: none !important;
 }
 
 .chatContent_f75fb0:has(+ .searchResultsWrap_a9e706) {
   border-bottom-right-radius: 0px !important;
-  border-right: none !important;
 }
 
 /* remove gap between servers and channels */
