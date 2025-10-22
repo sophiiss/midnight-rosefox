@@ -18,6 +18,16 @@ body {
   max-width: 194px !important;
 }
 
+/* make search less uglily-integrated with other parts */
+.searchResultsWrap_a9e706, searchHeader_f3b986 {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  border-top: none !important;
+  border-left: none !important;
+}
+
 /* remove gap between servers and channels */
 .visual-refresh {
   .guilds_c48ade {
