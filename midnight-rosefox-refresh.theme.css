@@ -32,6 +32,12 @@ body {
   border-bottom-right-radius: 0px !important;
 }
 
+.chatContent_f75fb0 + .container_c8ffbb {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top: none !important;
+}
+
 /* remove gap between servers and channels */
 .visual-refresh {
   .guilds_c48ade {
