@@ -28,10 +28,6 @@ body {
   border-top: none !important;
 }
 
-.chatContent_f75fb0:has(+ .searchResultsWrap_a9e706) {
-  border-bottom-right-radius: 0px !important;
-}
-
 .chatContent_f75fb0 + .container_c8ffbb {
   border-top-right-radius: 0px !important;
   border-top-left-radius: 0px !important;
@@ -61,6 +57,10 @@ body {
     border-top: none !important;
     border-radius: 0 0 var(--radius-lg) var(--radius-lg) !important;
   }
+}
+
+.chatContent_f75fb0:has(+ .searchResultsWrap_a9e706) {
+  border-bottom-right-radius: 0px !important;
 }
 
 /* customizing colors */
