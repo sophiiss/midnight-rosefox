@@ -44,16 +44,16 @@ a[href="https://support.discord.com"] {
   /* dividers surrounding recent apps */
   div.scroller__99e7c
     ul.content_d125d2
-    > div.sectionDivider__35e86:nth-child(5),
+    > div.sectionDivider_e6b769:nth-child(5),
   div.scroller__99e7c
     ul.content_d125d2
-    > div.sectionDivider__35e86:nth-child(7),
+    > div.sectionDivider_e6b769:nth-child(7),
   div.scroller__99e7c
     ul.content_d125d2
-    > div.sectionDivider__35e86:nth-child(6),
+    > div.sectionDivider_e6b769:nth-child(6),
   div.scroller__99e7c
     ul.content_d125d2
-    > div.sectionDivider__35e86:nth-child(8) {
+    > div.sectionDivider_e6b769:nth-child(8) {
     display: none !important;
   }
 
@@ -63,7 +63,7 @@ a[href="https://support.discord.com"] {
   }
 
   /* remove useless border below search button in dm list */
-  .searchBar__35e86 {
+  .searchBar_e6b769 {
     border-bottom: none !important;
   }
 }
@@ -110,18 +110,18 @@ a[href="https://support.discord.com"] {
 
 @container body style(--hide-toolbar-items-dm: true) {
   /* video call button */
-  div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2),
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2),
     /* create group dm button */
-    div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4),
+    div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4),
     /* show user profile button */
-    div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(5) {
+    div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(5) {
     display: none !important;
   }
 
   /* create group dm button during voice call */
-  div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3),
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3),
     /* show user profile button during voice call */
-    div.content_c48ade:has(nav.privateChannels__35e86) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(4) {
+    div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(4) {
     display: none !important;
   }
 }
@@ -136,11 +136,11 @@ a[href="https://support.discord.com"] {
 
 @container body style(--hide-toolbar-items-server: true) {
   /* threads button */
-  div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1),
+  div.content__5e434:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1),
     /* notification settings button */
-    div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(2),
+    div.content__5e434:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(2),
     /* show members list button */
-    div.content_c48ade:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(4) {
+    div.content__5e434:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(4) {
     display: none !important;
   }
 }
