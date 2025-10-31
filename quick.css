@@ -31,12 +31,14 @@ a[href="https://support.discord.com"] {
 }
 
 @container body style(--hide-nitro-shop-recentapps: true) {
-  /* nitro tab */
+  /* nitro */
   div.scroller__99e7c ul.content_d125d2>:nth-child(3),
-    /* shop tab */
+    /* shop */
     div.scroller__99e7c ul.content_d125d2>:nth-child(4),
-    /* quests tab */
-    div.scroller__99e7c ul.content_d125d2>:nth-child(5) {
+    /* quests */
+    div.scroller__99e7c ul.content_d125d2>:nth-child(5),
+    /* quests 2 */
+    div.scroller__99e7c ul.content_d125d2>:nth-child(6) {
     display: none !important;
   }
 }
