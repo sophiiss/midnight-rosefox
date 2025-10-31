@@ -3,7 +3,7 @@
 /* adjusting gap size */
 body {
   --gap: 4px !important;
-  
+  --top-bar-button-position: hide !important;
   --custom-window-controls: off;
   --custom-dms-icon: off;
 
