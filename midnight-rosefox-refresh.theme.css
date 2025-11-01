@@ -8,7 +8,8 @@ body {
   --small-user-panel: off;
   --top-bar-button-position: titlebar !important;
   --top-bar-height: var(--gap) !important;
-  --chatbar-height: 56px !important;
+  --custom-chatbar: off;
+  --chatbar-height: 47px;
 }
 
 /* prevent the dm context menu from taking half the screen with big usernames */
