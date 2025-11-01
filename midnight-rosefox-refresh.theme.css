@@ -3,14 +3,11 @@
 /* adjusting gap size */
 body {
   --gap: 4px !important;
-  --top-bar-button-position: hide !important;
   --custom-window-controls: off;
   --custom-dms-icon: off;
-
   --small-user-panel: off;
-
-  
-  --chatbar-height: 56px !important;
+  --top-bar-button-position: titlebar !important;
+  --top-bar-height: var(--gap) !important;
 }
 
 /* prevent the dm context menu from taking half the screen with big usernames */
