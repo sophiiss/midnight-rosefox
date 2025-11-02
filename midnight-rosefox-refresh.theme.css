@@ -12,6 +12,13 @@ body {
   --chatbar-height: 47px;
 }
 
+/* listening along panel consistency  */
+.listeningAlong_e0cf27 {
+  border-radius: var(--radius-lg) !important;
+  padding-top: 10px !important;
+  max-height: 46px;
+}
+
 /* prevent the dm context menu from taking half the screen with big usernames */
 #user-context {
   max-width: 194px !important;
