@@ -97,7 +97,7 @@ a[href="https://support.discord.com"] {
 
 @container body style(--hide-apps-button: true) {
   /* app launcher */
-  div.channelAppLauncher_e6e74f {
+  .app-launcher-entrypoint {
     display: none !important;
   }
 }
