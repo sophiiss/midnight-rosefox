@@ -3,6 +3,10 @@ a[href="https://support.discord.com"] {
   display: none !important;
 }
 
+.inviteButton_f37cb1 {
+  display: none !important;
+}
+
 /* ------- user context menu items ------- */
 @property --hide-context-menu-items {
   syntax: 'true | false';
