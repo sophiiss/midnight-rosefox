@@ -7,6 +7,10 @@ a[href="https://support.discord.com"] {
   display: none !important;
 }
 
+div[aria-label="Checkpoint"] {
+  display: none !important;
+}
+
 /* ------- user context menu items ------- */
 @property --hide-context-menu-items {
   syntax: 'true | false';
