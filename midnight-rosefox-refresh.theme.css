@@ -57,7 +57,7 @@ body {
 }
 
 /* make search less uglily-integrated with other parts */
-.a9e7064fdee8e9b0-searchResultsWrap {
+.a98f3b020416ad54-searchResultsWrap {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   margin-top: 0px !important;
@@ -72,7 +72,7 @@ body {
   border-top: none !important;
 }
 
-.f75fb00fb7356cbe-chatContent:has(+ .a9e7064fdee8e9b0-searchResultsWrap) {
+.f75fb00fb7356cbe-chatContent:has(+ .a98f3b020416ad54-searchResultsWrap) {
   border-bottom-right-radius: 0px !important;
 }
 
