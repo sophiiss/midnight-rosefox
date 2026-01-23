@@ -43,13 +43,3 @@ body {
 ```
 
 All done!
-
-## Screenshots
-
-#### Context menu before/after
-
-![07_111445_Discord](https://github.com/user-attachments/assets/9ba0d0d9-d292-4464-b825-7144a6be52de)
-
-#### General UI
-
-![image](https://github.com/user-attachments/assets/cbb3e910-16ec-4987-82e9-5cd82fe3c18d)
