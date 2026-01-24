@@ -3,7 +3,7 @@ a[href="https://support.discord.com"] {
   display: none !important;
 }
 
-.f37cb1984c371ee5-inviteButton {
+.inviteButton_f37cb1 {
   display: none !important;
 }
 
@@ -26,7 +26,7 @@ div[aria-label="Checkpoint"] {
   #user-context-apps,
   #user-context-invite-to-server,
   #user-context-invite-to-listen,
-  #user-context-invite-to-listen+div.c1e9c47c23f12ca3-separator {
+  #user-context-invite-to-listen+div.separator_c1e9c4 {
     display: none !important;
   }
 }
@@ -43,39 +43,39 @@ div[aria-label="Checkpoint"] {
 @container body style(--hide-nitro-shop-recentapps: true) {
 
   /* nitro */
-  div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>:nth-child(3),
+  div.scroller__99e7c ul.content_d125d2>:nth-child(3),
   /* shop */
-  div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>:nth-child(4),
+  div.scroller__99e7c ul.content_d125d2>:nth-child(4),
   /* quests */
-  div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>:nth-child(5),
+  div.scroller__99e7c ul.content_d125d2>:nth-child(5),
   /* quests 2 */
-  div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>:nth-child(6) {
+  div.scroller__99e7c ul.content_d125d2>:nth-child(6) {
     display: none !important;
   }
 
   /* frequent friends and its dividers */
-  ._1fc18cdca0445214-frequentFriendsRow,
-  ._1fc18cdca0445214-frequentFriendsRow+div.e6b7699ce8339e1c-sectionDivider,
-  div.e6b7699ce8339e1c-sectionDivider:has(+._1fc18cdca0445214-frequentFriendsRow) {
+  .frequentFriendsRow__1fc18,
+  .frequentFriendsRow__1fc18+div.sectionDivider_e6b769,
+  div.sectionDivider_e6b769:has(+.frequentFriendsRow__1fc18) {
     display: none !important;
   }
 }
 
 /* dividers surrounding recent apps */
-div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>div.e6b7699ce8339e1c-sectionDivider:nth-child(5),
-div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>div.e6b7699ce8339e1c-sectionDivider:nth-child(7),
-div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>div.e6b7699ce8339e1c-sectionDivider:nth-child(6),
-div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>div.e6b7699ce8339e1c-sectionDivider:nth-child(8) {
+div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(5),
+div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(7),
+div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(6),
+div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(8) {
   display: none !important;
 }
 
 /* make friends tab but further from dms */
-div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>div:nth-child(2) {
+div.scroller__99e7c ul.content_d125d2>div:nth-child(2) {
   margin-bottom: 11px !important;
 }
 
 /* remove useless border below search button in dm list */
-.e6b7699ce8339e1c-searchBar {
+.searchBar_e6b769 {
   border-bottom: none !important;
 }
 
@@ -90,11 +90,11 @@ div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>div:nth-child(2) {
 
 /* gift button */
 @container body style(--hide-gift-button: true) {
-  div._740174f3d6a2c8fe-buttons>div._740174f3d6a2c8fe-button {
+  div.buttons__74017>div.button__74017 {
     display: none !important;
   }
 
-  div._740174f3d6a2c8fe-buttons>div.c0c49a3e5c8626ac-container {
+  div.buttons__74017>div.container_c0c49a {
     display: none !important;
   }
 }
@@ -125,18 +125,18 @@ div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>div:nth-child(2) {
 @container body style(--hide-toolbar-items-dm: true) {
 
   /* video call button */
-  div._5e434347c823b592-content:has(nav.e6b7699ce8339e1c-privateChannels) div._9293f6b2fc12398a-toolbar:has(div._9293f6b2fc12398a-iconWrapper:nth-of-type(5)) div._9293f6b2fc12398a-iconWrapper:nth-of-type(2),
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2),
   /* create group dm button */
-  div._5e434347c823b592-content:has(nav.e6b7699ce8339e1c-privateChannels) div._9293f6b2fc12398a-toolbar:has(div._9293f6b2fc12398a-iconWrapper:nth-of-type(5)) div._9293f6b2fc12398a-iconWrapper:nth-of-type(4),
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4),
   /* show user profile button */
-  div._5e434347c823b592-content:has(nav.e6b7699ce8339e1c-privateChannels) div._9293f6b2fc12398a-toolbar:has(div._9293f6b2fc12398a-iconWrapper:nth-of-type(5)) div._9293f6b2fc12398a-iconWrapper:nth-of-type(5) {
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(5) {
     display: none !important;
   }
 
   /* create group dm button during voice call */
-  div._5e434347c823b592-content:has(nav.e6b7699ce8339e1c-privateChannels) div._9293f6b2fc12398a-toolbar:has(div._9293f6b2fc12398a-iconWrapper:nth-of-type(5)) div._9293f6b2fc12398a-iconWrapper:nth-of-type(3),
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(3),
   /* show user profile button during voice call */
-  div._5e434347c823b592-content:has(nav.e6b7699ce8339e1c-privateChannels) div._9293f6b2fc12398a-toolbar:has(div._9293f6b2fc12398a-iconWrapper:nth-of-type(5)) div._9293f6b2fc12398a-iconWrapper:nth-of-type(4) {
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4) {
     display: none !important;
   }
 }
@@ -153,11 +153,11 @@ div._99e7cad8d4c55236-scroller ul.d125d22cdfd32cfe-content>div:nth-child(2) {
 @container body style(--hide-toolbar-items-server: true) {
 
   /* threads button */
-  div._5e434347c823b592-content:has(nav._2637a2609f343032-container) div._9293f6b2fc12398a-toolbar div._9293f6b2fc12398a-iconWrapper:nth-of-type(1),
+  div.content__5e434:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(1),
   /* notification settings button */
-  div._5e434347c823b592-content:has(nav._2637a2609f343032-container) div._9293f6b2fc12398a-toolbar div._9293f6b2fc12398a-iconWrapper:nth-of-type(2),
+  div.content__5e434:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(2),
   /* show members list button */
-  div._5e434347c823b592-content:has(nav._2637a2609f343032-container) div._9293f6b2fc12398a-toolbar div._9293f6b2fc12398a-iconWrapper:nth-of-type(4) {
+  div.content__5e434:has(nav.container__2637a) div.toolbar__9293f div.iconWrapper__9293f:nth-of-type(4) {
     display: none !important;
   }
 }
