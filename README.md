@@ -41,7 +41,8 @@ body {
   --hide-apps-button: true;
 
   /* close, minimize, maximize buttons */
-  --hide-window-controls: false; /* can be also set to 'toolbox', in case you have the Vencord Toolbox plugin */
+  /* can be also set to 'toolbox', in case you have the Vencord Toolbox plugin */
+  --hide-window-controls: false;
 
   /* buttons above chat, 'Start Video Call', 'Create Group DM', etc. */
   --hide-toolbar-items-dm: true;
