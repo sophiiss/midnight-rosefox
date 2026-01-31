@@ -11,6 +11,27 @@ div[aria-label="Checkpoint"] {
   display: none !important;
 }
 
+/* ------- window controls ------- */
+@property --hide-window-controls {
+  syntax: 'true | false';
+  inherits: false;
+  initial-value: false;
+}
+
+@container body style(--hide-window-controls: true) {
+  .winButtons_c38106.winButtonsWithDivider_c38106 {
+    display: none !important;
+  }
+
+  .toolbar__9293f {
+    padding-right: 5rem;
+  }
+
+  .open_c322aa .searchBar_c322aa {
+    width: 326px !important;
+  }
+}
+
 /* ------- user context menu items ------- */
 @property --hide-context-menu-items {
   syntax: 'true | false';
