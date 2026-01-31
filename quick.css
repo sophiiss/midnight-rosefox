@@ -7,10 +7,6 @@ a[href="https://support.discord.com"] {
   display: none !important;
 }
 
-div[aria-label="Checkpoint"] {
-  display: none !important;
-}
-
 /* ------- window controls ------- */
 @property --hide-window-controls {
   syntax: 'true | toolbox | false';
