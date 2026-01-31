@@ -123,6 +123,12 @@ div.scroller__99e7c ul.content_d125d2>div:nth-child(2) {
 }
 
 @container body style(--hide-toolbar-items-dm: true) {
+  /* create group dm button during voice call */
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(2),
+  /* show user profile button during voice call */
+  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3) {
+    display: none !important;
+  }
 
   /* video call button */
   div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(2),
@@ -130,13 +136,6 @@ div.scroller__99e7c ul.content_d125d2>div:nth-child(2) {
   div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(4),
   /* show user profile button */
   div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:has(div.iconWrapper__9293f:nth-of-type(5)) div.iconWrapper__9293f:nth-of-type(5) {
-    display: none !important;
-  }
-
-  /* create group dm button during voice call */
-  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(2),
-  /* show user profile button during voice call */
-  div.content__5e434:has(nav.privateChannels_e6b769) div.toolbar__9293f:not(:has(div.iconWrapper__9293f:nth-of-type(5))) div.iconWrapper__9293f:nth-of-type(3) {
     display: none !important;
   }
 }
