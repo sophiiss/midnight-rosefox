@@ -57,7 +57,7 @@ body {
 }
 
 /* make search less uglily-integrated with other parts */
-.searchResultsWrap_a9e706 {
+.searchResultsWrap_a98f3b {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   margin-top: 0px !important;
@@ -72,7 +72,7 @@ body {
   border-top: none !important;
 }
 
-.chatContent_f75fb0:has(+ .searchResultsWrap_a9e706) {
+.chatContent_f75fb0:has(+ .searchResultsWrap_a98f3b) {
   border-bottom-right-radius: 0px !important;
 }
 
