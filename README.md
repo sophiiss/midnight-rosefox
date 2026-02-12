@@ -1,6 +1,6 @@
 # 🌹🦊
 
-This is a collection of CSS files to customize the [Midnight Discord theme](https://github.com/refact0r/midnight-discord) to my taste + some QuickCSS tweaks for hiding UI elements I find to be clutter and a waste of space.
+This is a collection of CSS files that customize the [Midnight Discord theme](https://github.com/refact0r/midnight-discord) to my taste + some CSS tweaks for hiding UI elements I find to be clutter.
 
 ## How to use:
 
