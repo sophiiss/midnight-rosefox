@@ -77,6 +77,25 @@ div:has(>div[aria-label="DevTools"].button__85643.iconWrapper__9293f.clickable__
 
 @container body style(--hide-nitro-shop-recentapps: true) {
 
+  
+  /* dividers surrounding recent apps */
+  div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(5),
+  div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(7),
+  div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(6),
+  div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(8) {
+    display: none !important;
+  }
+
+  /* make friends tab but further from dms */
+  div.scroller__99e7c ul.content_d125d2>div:nth-child(2) {
+    margin-bottom: 11px !important;
+  }
+
+  /* remove useless border below search button in dm list */
+  .searchBar_e6b769 {
+    border-bottom: none !important;
+  }
+
   /* nitro */
   div.scroller__99e7c ul.content_d125d2>:nth-child(3),
   /* shop */
@@ -94,24 +113,6 @@ div:has(>div[aria-label="DevTools"].button__85643.iconWrapper__9293f.clickable__
   div.sectionDivider_e6b769:has(+.frequentFriendsRow__1fc18) {
     display: none !important;
   }
-}
-
-/* dividers surrounding recent apps */
-div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(5),
-div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(7),
-div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(6),
-div.scroller__99e7c ul.content_d125d2>div.sectionDivider_e6b769:nth-child(8) {
-  display: none !important;
-}
-
-/* make friends tab but further from dms */
-div.scroller__99e7c ul.content_d125d2>div:nth-child(2) {
-  margin-bottom: 11px !important;
-}
-
-/* remove useless border below search button in dm list */
-.searchBar_e6b769 {
-  border-bottom: none !important;
 }
 
 /* ------- end stuff above dms ------- */
