@@ -13,11 +13,11 @@ body {
 }
 
 /* remove dropdown from mute and deafen buttons */
-.micButtonParent__37e49 button {
+.audioButtonParent__5e764 button {
   border-radius: var(--radius-sm) !important;
 }
 
-.micButtonParent__37e49 .buttonChevron__37e49 {
+.audioButtonParent__5e764 .buttonChevron__5e764 {
   display: none !important;
 }
 
