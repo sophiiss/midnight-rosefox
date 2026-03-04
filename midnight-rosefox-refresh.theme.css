@@ -12,6 +12,11 @@ body {
   --chatbar-height: 47px;
 }
 
+/* hide back and forward buttons */
+.backForwardButtons__63abb {
+  display: none;
+}
+
 /* remove dropdown from mute and deafen buttons */
 .audioButtonParent__5e764 button {
   border-radius: var(--radius-sm) !important;
