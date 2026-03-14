@@ -12,6 +12,11 @@ body {
   --chatbar-height: 47px;
 }
 
+/* hide devtools */
+div:has(>div[aria-label="DevTools"]) {
+  display: none !important;
+}
+
 /* hide back and forward buttons */
 .backForwardButtons__63abb {
   display: none;
