@@ -3,6 +3,10 @@ a[href="https://support.discord.com"] {
   display: none !important;
 }
 
+div > div[aria-label="Last Meadow Online"] {
+  display: none !important;
+}
+
 div:has(>div[aria-label="DevTools"].button__85643.iconWrapper__9293f.clickable__9293f) {
   display: none;
 }
