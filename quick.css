@@ -3,6 +3,16 @@ a[href="https://support.discord.com"] {
   display: none !important;
 }
 
+/* remove pin button from context menu */
+#user-context-pin-dm {
+  display: none !important;
+}
+
+.menu_c1e9c4 .separator_c1e9c4:nth-child(2) {
+  display: none !important;
+}
+
+
 /* remove temporary discord event idk */
 div > div[aria-label="The Last Meadow Online"] {
   display: none !important;
