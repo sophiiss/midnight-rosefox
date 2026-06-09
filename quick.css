@@ -3,6 +3,11 @@ a[href="https://support.discord.com"] {
   display: none !important;
 }
 
+/* direct messages above dm list */
+.privateChannelsHeaderContainer__99e7c {
+  display: none !important;
+}
+
 /* remove pin button from context menu */
 #user-context-pin-dm {
   display: none !important;
