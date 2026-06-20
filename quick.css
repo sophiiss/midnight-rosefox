@@ -69,6 +69,14 @@ div:has(>div[aria-label="DevTools"].button__85643.iconWrapper__9293f.clickable__
   .open_c322aa .searchBar_c322aa {
     width: 326px !important;
   }
+
+  .search__49676:has(.open_c322aa) {
+    margin-right: 86px !important;
+  }
+
+  .search__49676 {
+    transition: margin .25s ease;
+  }
 }
 
 /* ------- user context menu items ------- */
