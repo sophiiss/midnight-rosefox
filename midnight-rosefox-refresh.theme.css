@@ -22,6 +22,10 @@ div:has(>div[aria-label="DevTools"]) {
   display: none;
 }
 
+.listeningAlong_e0cf27 {
+  border-radius: var(--radius-lg) !important;
+}
+
 /* remove dropdown from mute and deafen buttons */
 .audioButtonParent__5e764 button {
   border-radius: var(--radius-sm) !important;
