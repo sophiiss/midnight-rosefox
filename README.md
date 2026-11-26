@@ -40,6 +40,9 @@ body {
   /* apps button on message box */
   --hide-apps-button: true;
 
+  /* message context menu items */
+  --hide-msg-context-menu-items: true;
+
   /* close, minimize, maximize buttons */
   /* can be also set to 'toolbox', in case you have the Vencord Toolbox plugin */
   --hide-window-controls: false;
