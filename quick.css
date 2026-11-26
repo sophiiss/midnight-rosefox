@@ -230,4 +230,23 @@ div:has(>div[aria-label="DevTools"].button__85643.iconWrapper_ybUK7Z.clickable_y
   }
 }
 
+/* redundant or useless message context menu items */
+@property --hide-msg-context-menu-items {
+  syntax: 'true | false';
+  inherits: false;
+  initial-value: true;
+}
+
+@container body style(--hide-msg-context-menu-items: true) {
+  #message-tts,
+  #message-reply,
+  #message-forward,
+  #message-edit,
+  #message-apps,
+  #message-mark-unread,
+  div#message div.separator_M3qk4j:nth-child(3) {
+    display: none !important;
+  }
+}
+
 /* -------- end server buttons -------- */
